@@ -1,0 +1,209 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --body: #000;
+    --green-escuro: rgba(6, 22, 27, 0.50);
+    --green-claro: #06181C;
+    --green-head: #092D38;
+    --button: #065E7C;
+
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+    height: 12.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #4A808C;
+}
+
+body {
+    font-size: 1.6rem;
+    background: var(--body);
+    font-family: 'Roboto', sans-serif;
+    color: #E1E1E6;
+}
+
+#app {
+    padding: 2rem;
+    max-width: 112rem;
+    margin: 0 auto;
+
+}
+
+.aps {
+    max-width: 112rem;
+    max-height: 62.4rem;
+    overflow: auto;
+    background-color: #030B0D;
+    background-image: url(images/Estrela.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 2.5rem 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+header .gitfav {
+    padding-right: 27rem;
+}
+
+header button {
+    width: 17rem;
+    height: 4.8rem;
+    background-color: var(--button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    line-height: 2.4rem;
+    border-radius: .5rem;
+    border: none;
+    margin-left: .8rem;
+
+}
+
+header input {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--green-claro);
+    color: #7C7C8A;
+    border-radius: .5rem;
+    width: 46.2rem;
+    height: 4.8rem;
+    border: none;
+    text-align: center;
+}
+
+header button:hover {
+    color: var(--button);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.selecionado {
+    fill: var(--button);
+}
+
+thead tr:nth-child(1) {
+    background-color: var(--green-head);
+    position: fixed;
+    width: 108rem;
+    top: 118;
+    display: flex;
+    
+}
+thead tr:nth-child(1) .u{
+    padding-left: 4rem;
+}
+thead tr:nth-child(1) .r{
+    margin-left: 40rem;
+    margin-right: .8rem;
+}
+thead tr:nth-child(1) .a{
+    margin-left: 6rem;
+}
+table {
+    width: 100%;
+    margin-top: 8.7rem;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+    font-size: 1.8rem;
+}
+
+table th {
+
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(even) {
+    background: var(--green-claro)
+}
+
+table tr {
+    background: var(--green-escuro)
+}
+
+td.user img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+    color: #E1E1E6;
+
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td button {
+    color: red;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+}
+
+td button:hover {
+    font-weight: 900;
+    filter: brightness(0.5);
+    cursor: pointer;
+}
